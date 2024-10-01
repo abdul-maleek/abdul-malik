@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+          Olasode Abdulmalik
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a class="lin" href="about">About</a></li>
+                <li><a href="experience">Experience</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Olasode Abdulmalik
+        </div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+           <span></span>
+           <span></span>
+           <span></span>
+          </div>
+          <div class="menu-links">
+                <li><a class="lin" onclick="location.href='/#contacts' ""> About</a></li>
+                <li><a  class="lin"  onclick="location.href='/#contacts' ">Experience</a></li>
+                <li><a class="lin" onclick="location.href='/#contacts'  "">Projects</a></li>
+                <li><a  class="lin"  onclick="location.href='/#contacts' ">Contacts</a></li>
+          </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic">
+            <img src="./assets/IMG_4964.JPG" width="400" height="400" style="border-radius: 50%;
+            border: 1px solid blanchedalmond;" alt="Abdulmalik">
+        </div>
+ <div class="section-text">
+<p class="section--text1">Hello, I'm </p>
+<h1 class="title"> Abdulmalik</h1>
+<p class="section--text2">Frontend Developer</p>
+<div class="btn-container">
+    <button class="btn btn-color2" onclick="window.open('./assets/Resume-Malik.pdf')">Download CV</button>
+    <button class="btn btn-color1" onclick="location.href='/#contacts'">Contacts Info</button>
+</div>
+<div id="socials">
+    <img src="./assets/linkedin.png" 
+    alt="linkdin profile" class="icon"
+ onclick="location.href= 'https://www.linkedin.com/in/malik-olasode-133758254/' "/>
+
+ <img src="./assets/github.png" 
+ alt="Github profile" class="icon"
+onclick="location.href= 'https://github.com/abdul-maleek' "/>
+</div>
+ </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
